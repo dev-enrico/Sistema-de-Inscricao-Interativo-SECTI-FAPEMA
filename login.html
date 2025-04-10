@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/login.js" defer></script>
+    <title>Página de Login</title>
+</head>
+<body class="login-page">
+    <main>
+        <section>
+            <div>
+                <button class="retornar__botao" onclick="clearForm()">
+                    <img class="retornar__icone" src="./assets/arrow-left-02.png" alt="Ícone Voltar">
+                    <span class="retornar__palavra">Voltar</span>
+                </button>                
+            </div>
+            <div>
+                <h1>Login do Usuário</h1>
+                <p>Preencha conforme você cadastrou anteriormente</p>
+            </div>
+            <form id="form">
+                <h2>Acesse sua conta</h2>
+
+                <p>Usuário</p>
+                <input type="text" id="user" name="user" class="required">
+                <div class="error-message">Deve ter no minimo 8 caracteres</div>
+
+                <p>Senha</p>
+                <input type="password" id="senha" name="senha" class="required">
+                <div class="error-message">Deve conter uma letra maiúscula e minúscula, um número, 8 caracteres e um especial</div>
+            </form>
+
+            <button type="button" class="button-design" onclick="checkLogin()">
+                <span>Acessar</span>
+            </button>
+
+        </section>
+        <img src="./assets/Illustration.png" alt="Cartoon illustration of a boy programming" class="imagem__ilustrativa">
+        <img src="./assets/Group 2.png" alt="Ícone Logo Trilhas e Inova Maranhão" class="imagem__trilhas">
+    </main>
+    <footer class="footer">
+        <p>Desenvolvido por Pedro Enrico Borgneth Ferraz e Renato da Silva Bento.</p>
+    </footer>
+</body>
+</html>
